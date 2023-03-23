@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/bg-main-desktop.png);
+  font-family: "Orbitron", sans-serif;
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+}
+
+.formStyles {
+  border-radius: 8px;
+  margin-bottom: 1em;
+  height: 2rem;
+  border-color: rgb(235, 226, 226);
+}
+label {
+  text-align: start;
+}
+@media (max-width: 450px) {
+  body {
+    background-size: 100% 45vh;
+  }
+  p {
+    font-size: 10px;
+  }
+  h3 {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}

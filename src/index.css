@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-main-desktop.png);
+  font-family: "Orbitron", sans-serif;
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+}
+
+.formStyles {
+  border-radius: 8px;
+  margin-bottom: 1em;
+  height: 2rem;
+  border-color: rgb(235, 226, 226);
+}
+
+label {
+  text-align: start;
+}
+
+@media (max-width: 450px) {
+  body {
+    background-size: 100% 45vh;
+  }
+  p {
+    font-size: 10px;
+  }
+  h3 {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}
+.mainFlex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 900px) {
+  .mainFlex {
+    flex-direction: column;
+  }
+}
+.cards {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.cards .backCard {
+  background-image: url(../src/images/bg-card-front.png);
+  background-size: contain;
+  color: white;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 200px;
+  padding-top: 80px;
+}
+.cards .backCard .date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.cards .frontCard {
+  background-image: url(../src/images/bg-card-back.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 200px;
+  align-self: last baseline;
+  text-align: center;
+}
+.cards .frontCard p {
+  color: white;
+  margin-top: 25%;
+}
+
+@media (max-width: 450px) {
+  .cards {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 375px) {
+  .cards {
+    flex-direction: column-reverse;
+  }
+  .cards .frontCard {
+    width: 250px;
+    align-self: last baseline;
+    height: 150px;
+    position: absolute;
+    top: -20%;
+  }
+  .cards .backCard {
+    width: 250px;
+    z-index: 2;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  max-width: 500px;
+  justify-content: space-evenly;
+  align-self: center;
+}
+form .subForm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+form .subForm #yearIn {
+  margin-right: 3rem;
+  margin-left: 1rem;
+}
+form .subForm #yearIn ::-webkit-inner-spin-button {
+  -webkit-appearance: unset;
+}
+form .subForm #cvcIn {
+  flex-grow: 1;
+}
+form .dates {
+  display: flex;
+  gap: 3rem;
+}
+form .submitForm {
+  width: 50%;
+  height: 2rem;
+  background-color: rgb(44, 10, 77);
+  color: white;
+  align-self: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+form .submitForm:hover {
+  color: red;
+}
+form .cardError {
+  color: red;
+}

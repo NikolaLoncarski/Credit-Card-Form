@@ -1,0 +1,49 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  max-width: 500px;
+  justify-content: space-evenly;
+  align-self: center;
+  .subForm {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    #yearIn {
+      margin-right: 3rem;
+      margin-left: 1rem;
+      ::-webkit-inner-spin-button {
+        -webkit-appearance: unset;
+      }
+    }
+
+    #cvcIn {
+      flex-grow: 1;
+    }
+  }
+  .dates {
+    display: flex;
+    gap: 3rem;
+  }
+  .submitForm {
+    width: 50%;
+    height: 2rem;
+    background-color: rgb(44, 10, 77);
+    color: white;
+    align-self: center;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .submitForm:hover {
+    color: red;
+  }
+  .cardError {
+    color: red;
+  }
+}
