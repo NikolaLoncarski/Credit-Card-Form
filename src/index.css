@@ -128,7 +128,7 @@ form .subForm #yearIn {
   margin-right: 3rem;
   margin-left: 1rem;
 }
-form .subForm #yearIn ::-webkit-inner-spin-button {
+form .subForm #yearIn::-webkit-inner-spin-button {
   -webkit-appearance: unset;
 }
 form .subForm #cvcIn {
@@ -148,7 +148,9 @@ form .submitForm {
   cursor: pointer;
 }
 form .submitForm:hover {
-  color: red;
+  border: rgb(44, 10, 77);
+  color: rgb(44, 10, 77);
+  background-color: white;
 }
 form .cardError {
   color: red;

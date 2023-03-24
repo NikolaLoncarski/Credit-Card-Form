@@ -18,11 +18,10 @@ form {
     #yearIn {
       margin-right: 3rem;
       margin-left: 1rem;
-      ::-webkit-inner-spin-button {
-        -webkit-appearance: unset;
-      }
     }
-
+    #yearIn::-webkit-inner-spin-button {
+      -webkit-appearance: unset;
+    }
     #cvcIn {
       flex-grow: 1;
     }
@@ -41,7 +40,9 @@ form {
     cursor: pointer;
   }
   .submitForm:hover {
-    color: red;
+    border: rgb(44, 10, 77);
+    color: rgb(44, 10, 77);
+    background-color: white;
   }
   .cardError {
     color: red;
