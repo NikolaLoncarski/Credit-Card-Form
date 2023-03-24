@@ -128,9 +128,6 @@ form .subForm #yearIn {
   margin-right: 3rem;
   margin-left: 1rem;
 }
-form .subForm #yearIn::-webkit-inner-spin-button {
-  -webkit-appearance: unset;
-}
 form .subForm #cvcIn {
   flex-grow: 1;
 }
